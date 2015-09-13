@@ -1,10 +1,16 @@
-class App {
-  constructor(a, b){
-      this.a = a;
-      this.b = b;
-    } 
-  
-  getFullName(){
-       return `${a} ${b}`;
-    }
+export class Welcome {
+
+  constructor() {
+    this.heading = 'Welcome to the Aurelia Navigation App!';
+    this.firstName = 'John';
+    this.lastName = 'Doe';
+  }
+
+  get fullName() {
+    return `${this.firstName} ${this.lastName}`;
+  }
+
+  submit() {
+    alert(`Welcome, ${this.fullName}!`);
+  }
 }
